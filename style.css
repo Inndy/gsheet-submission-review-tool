@@ -1,0 +1,38 @@
+h1 {
+  margin: 1em 0;
+}
+
+.data {
+  background: #eee;
+  padding: .5em 1em;
+  margin-bottom: 2em;
+}
+
+.data > div:not(:last-child) {
+  border-bottom: 1px solid #666;
+}
+
+.data > div > span {
+  padding: .5em 0;
+}
+
+.data > div > .field-name {
+  display: inline-block;
+  min-width: 8em;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+.data > div > .field-content {
+  display: inline-block;
+  min-width: 1px;
+  white-space: pre-line;
+}
+
+.data > div:last-child > .field-name {
+  padding-bottom: .5em;
+}
+
+/*
+ * vim: et sw=2
+ */
