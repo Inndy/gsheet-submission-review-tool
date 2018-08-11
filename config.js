@@ -1,5 +1,5 @@
 window.CONFIG = {
-  dataFileName: 'demo-submission.html',
+  // dataFileName: 'demo-submission.html',
   fields: [
     { name: 'speaker', label: 'Speaker' },
     { name: 'bio', label: 'Bio' },
