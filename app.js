@@ -21,11 +21,6 @@ function appendTemplatesToDocument(doc)
   });
 }
 
-function toArray(obj)
-{
-  return Array.prototype.slice.call(obj);
-}
-
 function arrayToObject(key, arr)
 {
   var obj = {};
@@ -37,8 +32,8 @@ function arrayToObject(key, arr)
 
 function tableTo2DArray(table)
 {
-  return toArray(table.querySelectorAll('tr'))
-    .map(tr => toArray(tr.querySelectorAll('td')).map(td => {
+  return Array.from(table.querySelectorAll('tr'))
+    .map(tr => Array.from(tr.querySelectorAll('td')).map(td => {
       td.innerHTML = td.innerHTML.replace(/<br>/ig, '\n');
       return td.textContent;
     }));
